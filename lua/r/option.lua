@@ -5,6 +5,8 @@ local api = vim.api
 -- opt.rtp:append(vim.fn.stdpath "config" .. "/lua/r/after")
 -- print(vim.fn.stdpath "config" .. "/lua/r/after")
 
+opt.shiftwidth = 4
+
 opt.relativenumber = true
 opt.number = true
 
