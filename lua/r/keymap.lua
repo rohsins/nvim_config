@@ -1,5 +1,5 @@
 -- Keymaps --
 
-vim.g.mapleaders = " "
-vim.g.maplocalleader = "\\"
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
