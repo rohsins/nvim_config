@@ -23,12 +23,13 @@ opt.signcolumn = "yes"
 
 opt.clipboard:append("unnamedplus")
 
--- api.nvim_create_autocmd('TextYankPost', {
--- 	desc = "Highlight when yanking (copying) text",
--- 	group = api.nvim_create_augroup("highlight-yank", { clear = true }),
--- 	callback = function()
--- 		vim.hl.on_yank()
--- 	end,
--- })
+opt.showmode = false
 
+api.nvim_create_autocmd('TextYankPost', {
+	desc = "Highlight when yanking (copying) text",
+	group = api.nvim_create_augroup("highlight-yank", { clear = true }),
+	callback = function()
+		vim.hl.on_yank()
+	end,
+})
 
