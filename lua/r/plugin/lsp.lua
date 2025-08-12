@@ -37,7 +37,7 @@ return {
 		    vim.keymap.set("n", "<leader>ds", builtin.lsp_document_symbols, { buffer = 0 })
 
 		    vim.keymap.set("n", "gi", builtin.lsp_implementations, { buffer = 0 })
-		    vim.keymap.set("n", "ws", builtin.lsp_dynamic_workspace_symbols, { buffer = 0 })
+		    vim.keymap.set("n", "<leader>ws", builtin.lsp_dynamic_workspace_symbols, { buffer = 0 })
 
 		    -- This function resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
 		    ---@param client vim.lsp.Client
